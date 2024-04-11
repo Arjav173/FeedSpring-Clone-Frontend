@@ -6,19 +6,20 @@
     <title>Feed Spring</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main w-full px-20 py-10 mb-14">
-        <div class="nav relative flex justify-between">
+    <div class="main px-20 py-10  bg-slate-100">
+        <div class="nav relative flex justify-between fixed">
             <div class="logo text-xl font-bold "><i class="ri-color-filter-line text-blue-700"></i>FeedSpring</div>
-            <div class="middle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1 opacity-60 flex gap-8">
+            <div class="middle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60 flex gap-8">
                 <div class="product">Product<i class="ri-arrow-down-s-fill"></i></div>
                 <div class="resources">Resources<i class="ri-arrow-down-s-fill"></i></div> <!-- Corrected typo in class name -->
                 <div class="pricing">Pricing</div>
             </div>
             <div class="right flex gap-8 items-center justify-center">
-                <button class="border border-black rounded-full w-24 hover:bg-blue-500 hover:text-white">Login</button>
-                <button class="border border-black rounded-full w-28 hover:bg-blue-500 hover:text-white">Signup Free</button>
+                <button class="border  rounded-full w-24 hover:bg-slate-100 p-2">Login</button>
+                <button class="border rounded-full w-28 hover:bg-sky-950 hover:text-white p-2 bg-slate-100">Signup Free</button>
             </div>
         </div>
         <div class="part2 py-10">
@@ -26,24 +27,56 @@
             <div class="text text-center text-6xl font-semibold py-5">Build social feeds <br>without the <span style="color: blue;">limitations</span>.</div>
             <div class="text2 text-center leading-7 font-semibold text-xl">Build completely custom feeds for Webflow, Framer and everything <br>else. Connect your favourite platforms like <span style="font-weight: 800;">Google Reviews, Instagram, <br>Dribbble </span>& more. <span style="color: blue;">Get started for free today!</span></div>
         </div>
-        <div class="flex justify-center pr-10 gap-5"> <!-- Centering div -->
-            <button class="border border-black px-8 py-3 rounded-full ">Get Started</button>
-            <button class="border border-black rounded-full w-32">Learn More</button> <!-- Centered without extra div -->
+        <div class="flex justify-center pr-10 gap-5 items-center"> 
+            <button class="border border-black px-8 py-3 rounded-full hover:bg-sky-950 hover:text-white">Get Started</button>
+            <button class="border py-3 rounded-full w-32 hover:bg-slate-100">Learn More</button>
          </div>
-         <div class="img py-10 flex gap-1 justify-center">
-            <div class="img1 py-10 pl-30">
-                <img class="" src="https://assets-global.website-files.com/62f1a490150fefe030f763b4/638f2f3f3df798e650d99a94_Card%20Pink.svg" alt="">
+         <div class="cards w-full h-96 mt-20 mb-10 ">
+            <div class="container relative h-96 mt-10 flex justify-center items-center ">
+            <div class="card1 absolute h-96 w-80 z-[1] bg-slate-100 left-1/2 origin-[50%_100%] rotate-12 scale-90 rounded-xl p-3">
+                <div class="w-full h-3/4 rounded-xl bg-orange-100 relative">
+                    <i class="ri-color-filter-line text-blue-700 text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" ></i>
+                </div>
+                <div class="icons text-2xl flex justify-between mt-8">
+                    <div class="social flex gap-5">
+                    <i class="text-red-600 ri-heart-fill"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                    </div>
+                    <i class="ri-bookmark-line"></i>
+                </div>    
             </div>
-            <div class="img2 ">
-                <img src="https://assets-global.website-files.com/62f1a490150fefe030f763b4/638f2efeeb1a4d6f62d7667d_3.svg" alt="">
+            <div class="card2 absolute h-96 w-80 z-[3] bg-slate-100 p-3 rounded-xl">
+                <div class="w-full h-3/4 rounded-xl bg-blue-200 relative">
+                    <i class="ri-color-filter-line text-blue-700 text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" ></i>
+                </div>
+                <div class="icons text-2xl flex justify-between mt-8">
+                    <div class="social flex gap-5">
+                    <i class="text-red-600 ri-heart-fill"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                    </div>
+                    <i class="ri-bookmark-line"></i>
+                </div>
             </div>
-            <div class="img3 py-10 pr-30">
-                <img src="https://assets-global.website-files.com/62f1a490150fefe030f763b4/638f2f72f9d564f869781d27_Card%20Yellow.svg" alt="">
-            </div>         
+            <div class="card3 absolute h-96 w-80 z-[2] bg-slate-100 right-1/2 origin-[50%_100%] -rotate-12 scale-90 rounded-xl p-3 hover:h-[450px]">
+                <div class="w-full h-3/4 rounded-xl bg-red-100 relative">
+                    <i class="ri-color-filter-line text-blue-700 text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" ></i>
+                </div>
+                <div class="icons text-2xl flex justify-between mt-8">
+                    <div class="social flex gap-5">
+                    <i class="text-red-600 ri-heart-fill"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                    </div>
+                    <i class="ri-bookmark-line"></i>
+                </div>
+            </div>
+        </div>   
         </div>
-        <div class="part3 py-10 flex ">
+        <div class="part3 py-10 flex mt-40">
             <div class="texti w-2/3"> 
-                <button class="border border-black rounded-full w-48 h-10 justify-center">Powerful Feed Options</button>
+                <button class="border rounded-full w-48 h-10 justify-center">Powerful Feed Options</button>
                 <div class="text py-5 text-6xl font-semibold leading-normal">Display your <span style="color: blue;">feed <br> content</span> on all your sites. Fast, simple and custom.</div>
                 <p class="text-3xl">Build a social feed that looks as cool as you imagined.
                     Say good-bye to basic widget solutions, say hello to FeedSpring freedom. FeedSpring is built for enterprise businesses so you can enjoy the fastest, most flexible and secure service available.</p> 
@@ -71,9 +104,64 @@
             <div class="mt-10 text-5xl font-bold leading-normal">This section was built in <br>Webflow and uses <br> attributes👇</div>
 
         </div>
-        <div class="part6 a flex h-96 w-[58%] bg-blue-500 mt-10 justify-center mx-auto">
-                <div class="box1 h-44 w-[52%] bg-red-300 ">
+        <div class="part6 a flex  mt-10 justify-center mx-auto">
+            <div class="container h-[400px] w-[60%] flex justify-center items-center gap-3">
+                <div class="section1 flex h-full w-full flex-col gap-3">
+                    <div class="box1 h-2/3 w-full bg-white rounded-xl box py-5 px-5">
+                        <div class="stars flex text-blue-700 text-3xl ">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="font-semibold mt-5 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque consectetur id consequatur cum et quas dolores optio distinctio non .</p>
+                        <div class="details flex mt-3 gap-5">
+                                <img class="h-[60px] w-[60px] rounded-full object-cover" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <h3 class="font-bold">Arjav Jain <br> <span class="opacity-60 font-normal">December 22, 2023</span></h3>
+                        </div>
+                    </div>
+                    <div class="box1 h-1/3 w-full bg-white rounded-xl box py-5 px-5 ">
+                        <div class="stars flex text-orange-700 text-2xl ">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sint!</p>
+                    </div>
                 </div>
+                <div class="section2 h-full w-full flex flex-col gap-3">
+                    <div class="box1 h-1/3 w-full bg-white rounded-xl box py-5 px-5 ">
+                        <div class="stars flex text-green-700 text-2xl ">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="opacity-60 ri-star-fill"></i>
+                        </div>
+                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sint!</p>
+                    </div>
+                    <div class="box1 h-2/3 w-full bg-white rounded-xl box py-5 px-5">
+                        <div class="stars flex text-blue-400 text-3xl ">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="font-semibold mt-5 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque consectetur id consequatur cum et quas dolores optio distinctio non .</p>
+                        <div class="details flex mt-3 gap-5">
+                                <img class="h-[60px] w-[60px] rounded-full object-cover" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <h3 class="font-bold">Arjav Jain <br> <span class="opacity-60 font-normal">December 22, 2023</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review flex justify-center items-center">
+            <button class="border border-black rounded-full px-4 mt-10 py-3 "><i class="text-red-600 ri-google-fill"></i> 4.8 from over 4 reviews</button>
         </div>
     </div>
 </body>

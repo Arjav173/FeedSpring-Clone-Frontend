@@ -1,0 +1,16 @@
+html, body{
+   width: 100%;
+}
+
+.card2{
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.292);
+}
+.card1{
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.217);
+}
+.card3{
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.208);
+}
+.box{
+    box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.208);
+}
